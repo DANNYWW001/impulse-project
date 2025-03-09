@@ -12,10 +12,10 @@
   </head>
   <body>
     <header>
-      <nav
-        class="px-5 py-8  max-w-[full] bg-yellow-900 opacity-95"
-      >
-        <div class="max-w-4xl mx-auto flex items-center justify-between text-white font-[900] text-3xl">
+      <nav class="px-5 py-8 max-w-[full] bg-yellow-900 opacity-95">
+        <div
+          class="max-w-4xl mx-auto flex items-center justify-between text-white font-[900] text-3xl"
+        >
           <div class="">
             <a href="#">
               <i class="bi bi-list"></i>
@@ -32,19 +32,81 @@
         </div>
       </nav>
     </header>
-    <main>
-        <h1 class="text-center font-semibold text-[45px] mt-20 mb-10">Get In Touch</h1>
-        <div>
-            <div class="flex flex-col gap-[15px]">
-                <a href="#"><i class="bi bi-telephone"></i>01632 960192</a>
-                <a href="#"><i class="bi bi-envelope"></i>hitir48807@netjook.com</a>
-                <p><i class="bi bi-clock"></i>MON-SAT, 9-5 | SUN, 10-4</p>
-                <a href="#"><i class="bi bi-geo-alt"></i>2321 Wildwood Street, OH, 44503</a>
-            </div>
-            <form>
-                <input type="text" placeholder="Name">
-            </form>
+    <main class="max-w-4xl flex flex-col items-center">
+      <h1 class="font-semibold text-[45px] mt-20 mb-10">Get In Touch</h1>
+      <div>
+        <div class="flex flex-col gap-[15px]">
+          <a href="#"><i class="bi bi-telephone"></i>01632 960192</a>
+          <a href="#"><i class="bi bi-envelope"></i>hitir48807@netjook.com</a>
+          <p><i class="bi bi-clock"></i>MON-SAT, 9-5 | SUN, 10-4</p>
+          <a href="#"
+            ><i class="bi bi-geo-alt"></i>2321 Wildwood Street, OH, 44503</a
+          >
         </div>
+        <form class="flex flex-col">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            placeholder="Name"
+            id="name"
+            class="bg-gray-100 w-[300px] mt-2 p-4"
+          />
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            placeholder="your@email.com"
+            id="email"
+            class="bg-gray-100 w-[300px] mt-2 p-4"
+          />
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            placeholder="Your message"
+            class="bg-gray-100 mt-2 p-4 w-[300px] mb-[20px]"
+          ></textarea>
+          git<button
+            class="bg-yellow-800 px-4 py-3 mt-[40px] font-[400] text-[12px] mb-[70px] cursor-pointer text-white"
+          >
+            FIND OUT MORE
+          </button>
+        </form>
+      </div>
     </main>
+    <footer class="bg-gray-700 items-center text-center">
+      <div
+        class="justify-center text-[12px] flex flex-col md:flex-row md:gap-[200px]"
+      >
+        <h5
+          class="text-[40px] font-semibold text-gray-400 pt-[70px] pb-[30px] text-[20px]"
+        >
+          IMPULSE
+        </h5>
+        <div class="flex flex-col text-gray-400 gap-[15px] pt-[70px]">
+          <h3 class="text-white text-[16px]">MORE INFO</h3>
+          <a href="#">ABOUT</a>
+          <a href="#">INFO</a>
+          <a href="#">FAQ</a>
+        </div>
+        <div
+          class="flex flex-col gap-[15px] justify-between text-gray-400 pt-[70px]"
+        >
+          <h3 class="text-white text-[16px]">HELPFUL LINKS</h3>
+          <a href="#">ABOUT</a>
+          <a href="">INFO</a>
+          <a href="">FAQ</a>
+        </div>
+        <div class="flex flex-col gap-[15px] text-gray-400 pt-[70px]">
+          <h3 class="text-white text-[16px]">FIND OUT MORE</h3>
+          <a href="#">ABOUT</a>
+          <a href="#">INFO</a>
+          <a href="#">FAQ</a>
+        </div>
+      </div>
+      <p
+        class="pt-[100px] pb-[70px] text-gray-400 text-center text-[14px] max-w-[280px] mx-auto md:max-w-4xl"
+      >
+        &copy;2021 DESIGN BY NOVOLIO. IMAGES BY UNSPLASH
+      </p>
+    </footer>
   </body>
 </html>
